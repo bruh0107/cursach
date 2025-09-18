@@ -21,5 +21,6 @@ import SiteFooter from './components/SiteFooter.vue'
 }
 .app-main {
   flex: 1;
+  padding: 24px 0 40px;
 }
 </style>

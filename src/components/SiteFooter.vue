@@ -15,8 +15,8 @@
 
 <style scoped>
 .site-footer {
-  border-top: 1px solid #e5e7eb;
-  background: #fafafa;
+  border-top: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(10,14,23,0.2), rgba(10,14,23,0.6));
 }
 .footer-inner {
   padding: 16px;
@@ -25,10 +25,10 @@
   justify-content: space-between;
 }
 .link {
-  color: #374151;
+  color: var(--muted);
   text-decoration: none;
 }
 .link:hover {
-  text-decoration: underline;
+  color: var(--text);
 }
 </style>

@@ -127,13 +127,15 @@ label {
   font-weight: 600;
 }
 input {
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
   padding: 10px 12px;
   font-size: 14px;
+  background: #0b1222;
+  color: var(--text);
 }
 .error {
-  color: #b91c1c;
+  color: var(--danger);
   margin: 2px 0 0;
   font-size: 13px;
 }
@@ -147,20 +149,21 @@ input {
 }
 .button {
   cursor: pointer;
-  border: 1px solid #d1d5db;
-  background: #fff;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, #0f182d, #0c1222);
   padding: 10px 16px;
-  border-radius: 8px;
+  border-radius: var(--radius);
+  color: var(--text);
 }
 .button.primary {
-  background: #2563eb;
-  color: #fff;
-  border-color: #2563eb;
+  background: linear-gradient(180deg, rgba(34,211,238,0.18), rgba(34,211,238,0.06));
+  color: #e6fdff;
+  border-color: var(--primary);
 }
 .button.link {
   border: none;
   background: transparent;
-  color: #374151;
+  color: var(--muted);
   text-decoration: underline;
   padding: 0;
 }

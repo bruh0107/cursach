@@ -41,8 +41,8 @@ function goTo(path) {
 
 <style scoped>
 .site-header {
-  border-bottom: 1px solid #e5e7eb;
-  background: #fff;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(10,14,23,0.9), rgba(10,14,23,0.6));
   position: sticky;
   top: 0;
   z-index: 10;
@@ -54,9 +54,12 @@ function goTo(path) {
   justify-content: space-between;
 }
 .brand {
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: 0.5px;
   cursor: pointer;
+  color: var(--text);
+  text-shadow: 0 0 18px rgba(34,211,238,0.5), 0 0 6px rgba(167,139,250,0.45);
 }
 .nav {
   display: flex;
@@ -64,35 +67,37 @@ function goTo(path) {
   gap: 8px;
 }
 .link {
-  color: #374151;
+  color: var(--muted);
   text-decoration: none;
   cursor: pointer;
 }
 .link:hover {
-  text-decoration: underline;
+  color: var(--text);
 }
 .button {
   cursor: pointer;
-  border: 1px solid #d1d5db;
-  background: #fff;
-  padding: 6px 12px;
-  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, #0f182d, #0c1222);
+  color: var(--text);
+  padding: 8px 12px;
+  border-radius: 10px;
 }
 .button.primary {
-  background: #2563eb;
-  color: #fff;
-  border-color: #2563eb;
+  background: linear-gradient(180deg, rgba(34,211,238,0.18), rgba(34,211,238,0.06));
+  color: #e6fdff;
+  border-color: var(--primary);
 }
 .button.danger {
-  background: #ef4444;
-  color: #fff;
-  border-color: #ef4444;
+  background: linear-gradient(180deg, rgba(239,68,68,0.2), rgba(239,68,68,0.06));
+  color: #ffe8e8;
+  border-color: var(--danger);
 }
 .tag {
-  background: #f3f4f6;
-  border: 1px solid #e5e7eb;
+  background: #0b1427;
+  border: 1px solid var(--border);
   padding: 6px 10px;
   border-radius: 20px;
   font-size: 14px;
+  color: var(--muted);
 }
 </style>
